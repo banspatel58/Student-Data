@@ -1,0 +1,50 @@
+ALGORITHM ASSIGNMENT 4
+
+Goal: To familiarize ourselves with the concept of abstract data type, classes and ojects in java.
+
+Input: 
+* Ask the user what they would like to do: 1) load the student file, 2) print the stack or 3) exit the program
+
+Output:
+* if user inputs 1, print students loaded from the file (read the text file); 
+* if user inputs 2, display the data of students
+* if user inputs 3, exit from the loop
+
+Requirements:
+
+* A stack class that defines how to push or pop the data on the stack
+* A student class that gets student name, id, gpa, address from the text file 
+* An Address class that further splits element in to the components and reads them and also check which component is blank and handle the blank spaces.
+* A driver class which collects all the information creates a student object and push them in to stack and pop them when asked.
+
+Step – by – Step Details:
+1. Ask the user what they would like to do: 1) load the student file, 2) print the stack or 3) exit the program
+2. if user inputs 1, print students loaded from the file (read the text file) and push each student object which is made of student data in the stack. 
+3. if user inputs 2, display the data of students by popping out each student object one by one.
+4. if user inputs 3, exit from the loop
+5. if the user enters 1 read the text file
+6. store each data element in a line in an array 
+7. and push the data elements to the stack. In order to push and pop the elements to stack we need a different class to describe the method. Refer part A
+8. repeat the steps 5-7 until entire file is read
+9. if the user enters 2 than pop the data elements from the stack one by one
+10. In the student class define all the data elements for student  that is student name, ID, address & GPA.
+11. for the data element address split the address in the further components that is address1, address2, city, state, zip code.
+12. the first element of the array is student's first name, the second is the student's last name, the third is address1, the fourth is address2, the fifth is city name, the sixth is the state name, the  seventh is the zip code, the eight is the student ID, and the ninth is the student gpa.
+
+
+PART A
+1) In order to push an element on the stack (store an element on stack in order) we need to check if the stack is full
+2) If the stack is full we cannot add any further element and hence we need to throw an error
+3) if the stack is not full than we can top pointer to the next level. The top pointer is one which is the top most element of stack so in order to push element to stack stack must not be full hence we can push the item on stack by incrementing the top by one.
+4)Also you can pop the element from the stack in order to display to the user.
+5) To pop the elements from the stack we need to check if the stack is empty because if the stack is empty we cannot pop any elements and hence it throws an error.
+6) if the stack is not empty we can pop the top most element as stack is last in first out. and decrease the top value by one hence we did pop an element from the stack.
+
+PART B
+1) To represent the data elements we do need to define a separate class called student class.
+2) Up here we can check for students name, id, gpa and address.
+3) and also check for data that is not available and handle that properly.
+
+PART C
+1) The address is further split in to its components namely address 1, address 2, city, state, postal code.
+2) this information is further retrieved from the data by reading the text files and storing the data pieces in an array and further accessing these elements.
